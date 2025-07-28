@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: stic
+    env: node
+    buildCommand: |
+      npm install
+      npm run db:push
+      npm run build
+    startCommand: npm run start
+    envVars:
+      - key: DATABASE_URL
+        value: postgresql://...
