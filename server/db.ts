@@ -14,3 +14,4 @@ export const pool = new Pool({ connectionString: DATABASE_URL });
 
 // Drizzle ORM ile bağlanıyoruz
 export const db = drizzle(pool, { schema });
+
