@@ -106,3 +106,11 @@
     "bufferutil": "^4.0.8"
   }
 }
+{
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "start": "node server/index.js",
+    "db:push": "drizzle-kit push"
+  }
+}
