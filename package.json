@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "type": "module",
   "license": "MIT",
+  "engines": {
+    "node": "20.x"
+  },
   "scripts": {
     "dev": "NODE_ENV=development tsx server/index.ts",
     "db:push": "drizzle-kit push",
@@ -104,13 +107,5 @@
   },
   "optionalDependencies": {
     "bufferutil": "^4.0.8"
-  }
-}
-{
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "start": "node server/index.js",
-    "db:push": "drizzle-kit push"
   }
 }
